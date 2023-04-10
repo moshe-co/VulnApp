@@ -16,12 +16,12 @@ int main()
 
     local_info_t localinfo;
     localinfo.access = 0;
+    char user_input[64] = {0};
 
     printf("What is the password? ");
-    scanf("%s", localinfo.pass);
-
-    int ret = strcmp(localinfo.pass, "SupoerDuperSecretPassword");
-    if (ret)
+    scanf("%s", user_input);
+    strcpy(localinfo.pass, user_input);
+    if (strcmp(localinfo.pass, "SupoerDuperSecretPassword"))
         printf("Wrong password\n");
     else
         localinfo.access = 1;
