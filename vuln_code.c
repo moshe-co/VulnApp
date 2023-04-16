@@ -4,7 +4,7 @@
 /**
  * What is wrong in this code?
  * when the user passing the password the code uses strcmp which allow to create a simple buffer overflow.
- * passing the input of 17 characters when the last one is '1' will set localinfo.access to 1 which will allow
+ * passing the input of 26 characters when the last one is '1' will set localinfo.access to 1 which will allow
  * for root access regardless the password is correct or not.
 */
 int main()
