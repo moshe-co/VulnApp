@@ -21,7 +21,7 @@ int main()
     printf("What is the password? ");
     scanf("%s", user_input);
     strcpy(localinfo.pass, user_input);
-    if (strcmp(localinfo.pass, "SupoerDuperSecretPassword"))
+    if (strcmp(localinfo.pass, "Sup3rDuper$ecretP4ssw0rd"))
         printf("Wrong password\n");
     else
         localinfo.access = 1;
